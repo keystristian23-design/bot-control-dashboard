@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: alpha-blade-dashboard
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    repo: https://github.com/keystristian23-design/bot-control-dashboard
+    branch: main
+    rootDir: ./
+    autoDeploy: true
